@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve Book Page - Soft Maroon Theme">
+    <title>Reserve a Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4e1e4;
+            color: #4a0e0e;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #f8dede;
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #7a2c2c;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #7a2c2c;
+        }
+
+        input, select, textarea {
+            padding: 12px;
+            border: 1px solid #b78c8c;
+            border-radius: 8px;
+            background-color: #ffffff;
+            color: #4a0e0e;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #9d6b6b;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border: 1.5px solid #7a2c2c;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #c44d4d;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a63c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reserve a Book</h1>
+        <form>
+            <label for="book-title">Title of the Book:</label>
+            <input type="text" id="book-title" name="book-title" placeholder="Enter book title">
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" placeholder="Enter author name">
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="biography">Biography</option>
+            </select>
+
+            <label for="ic-no">IC No:</label>
+            <input type="text" id="ic-no" name="ic-no" placeholder="Enter your IC number">
+
+            <label for="comments">Additional Comments (Optional):</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional information..."></textarea>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+    </div>
+</body>
+</html>
