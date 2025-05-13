@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Book Issue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+		<nav class="navbar section-content">
+			<a href="#" class="nav-logo">
+			<img src="Whimsigirl Logo.jpg" alt="Library Logo" class="logo-image">
+				<h2 class ="logo-text">Whimsigirl Library</h2>
+			</a>
+			<ul class="nav-menu">
+				<li class ="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class ="nav-item">
+					<a href="#" class="nav-link">Search</a>
+				</li>
+				<li class ="nav-item">
+					<a href="#" class="nav-link">Reserve</a>
+				</li>
+				<li class ="nav-item">
+					<a href="#" class="nav-link">Issue</a>
+				</li>
+				<li class ="nav-item">
+					<a href="#" class="nav-link">Fine</a>
+				</li>
+				<li class ="nav-item">
+					<a href="#" class="nav-link">Log Out</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+    <main class="issue-page">
+        <div class="form-container">
+            <h2 class="form-title">Report an Issue with Your Book</h2>
+            <p class="form-description">
+                Encountered a problem with a borrowed book? Fill out this form to let us know. Upload an image if necessary.
+            </p>
+
+            <form action="#" method="POST" class="issue-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="ic-number">IC Number</label>
+                    <input type="text" id="ic-number" name="ic-number" placeholder="Enter your IC number" required>
+                </div>
+                <div class="form-group">
+                    <label for="book-id">Book ID</label>
+                    <input type="text" id="book-id" name="book-id" placeholder="Enter the Book ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Issue</label>
+                    <textarea id="issue" name="issue" rows="5" placeholder="Describe the issue (e.g., torn pages, cover damage)" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="proof">Upload Proof (Optional)</label>
+                    <input type="file" id="proof" name="proof" accept="image/*">
+                    <small class="file-hint">Accepted formats: JPEG, PNG (Max size: 5MB)</small>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Report</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
