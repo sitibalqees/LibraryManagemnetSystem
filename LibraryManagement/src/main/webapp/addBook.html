@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add Book Page - Library Admin Panel">
+    <title>Add a Book (Admin)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7d3d3;
+            color: #3f1d1d;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #8b3b3b;
+            padding: 15px 20px;
+            color: #ffffff;
+        }
+
+        .header .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffd1d1;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 500px;
+            margin: 80px auto 0;
+            background-color: #d9bebe;
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #5a2e2e;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #5a2e2e;
+        }
+
+        input, select, textarea {
+            font-family: Arial, sans-serif;
+            padding: 12px;
+            border: 1px solid #8b3b3b;
+            border-radius: 8px;
+            background-color: #ffffff;
+            color: #3f1d1d;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #9d6b6b;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border: 1.5px solid #5a2e2e;
+        }
+
+        button {
+            font-family: Arial, sans-serif;
+            background-color: #8b3b3b;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #733232;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Title and Navbar -->
+    <div class="header">
+        <div class="title">Library Admin</div>
+        <div class="navbar">
+            <a href="addBook.html">Add Book</a>
+            <a href="updateBook.html">Update Book</a>
+            <a href="deleteBook.html">Delete Book</a>
+            <a href="reserveBook.html">Reserve Book</a>
+            <a href="finePayment.html">Fine Payment</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Add Book</h1>
+        <form>
+            <label for="book-title">Title of the Book:</label>
+            <input type="text" id="book-title" name="book-title" placeholder="Enter book title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" placeholder="Enter author name" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="biography">Biography</option>
+            </select>
+
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN number" required>
+
+            <label for="publisher">Publisher:</label>
+            <input type="text" id="publisher" name="publisher" placeholder="Enter publisher name" required>
+
+            <label for="publication-year">Publication Year:</label>
+            <input type="number" id="publication-year" name="publication-year" placeholder="Enter year (e.g. 2023)" required>
+
+            <label for="price">Price:</label>
+            <input type="number" step="0.01" id="price" name="price" placeholder="Enter book price (RM)" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter number of copies" required>
+
+            <div class="button-group">
+                <button type="submit">Add Book</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
