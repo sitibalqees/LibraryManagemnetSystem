@@ -3,34 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Reserve Book Page - Soft Maroon Theme">
+    <meta name="description" content="Reserve Book Page - Refined Soft Maroon Theme with Navbar">
     <title>Reserve a Book</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4e1e4;
-            color: #4a0e0e;
+            background-color: #e7d3d3;
+            color: #3f1d1d;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
 
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #8b3b3b;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffd1d1;
+        }
+
+        /* Main Container */
         .container {
-            background-color: #f8dede;
+            max-width: 450px;
+            margin: 80px auto 0;
+            background-color: #d9bebe;
             padding: 25px 35px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-            max-width: 400px;
-            width: 100%;
         }
 
         h1 {
             text-align: center;
+            color: #5a2e2e;
             margin-bottom: 20px;
-            color: #7a2c2c;
         }
 
         form {
@@ -41,15 +58,15 @@
 
         label {
             font-weight: bold;
-            color: #7a2c2c;
+            color: #5a2e2e;
         }
 
         input, select, textarea {
             padding: 12px;
-            border: 1px solid #b78c8c;
+            border: 1px solid #8b3b3b;
             border-radius: 8px;
             background-color: #ffffff;
-            color: #4a0e0e;
+            color: #3f1d1d;
         }
 
         input::placeholder, textarea::placeholder {
@@ -58,7 +75,7 @@
 
         input:focus, select:focus, textarea:focus {
             outline: none;
-            border: 1.5px solid #7a2c2c;
+            border: 1.5px solid #5a2e2e;
         }
 
         textarea {
@@ -66,7 +83,7 @@
         }
 
         button {
-            background-color: #c44d4d;
+            background-color: #8b3b3b;
             color: #ffffff;
             border: none;
             padding: 12px;
@@ -76,11 +93,21 @@
         }
 
         button:hover {
-            background-color: #a63c3c;
+            background-color: #733232;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="issue.html">Issue</a>
+        <a href="fine.html">Fine</a>
+        <a href="logout.html">Log Out</a>
+    </div>
+
+    <!-- Main Content -->
     <div class="container">
         <h1>Reserve a Book</h1>
         <form>
@@ -111,3 +138,4 @@
     </div>
 </body>
 </html>
+
