@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Logout Page - Soft Maroon Theme">
+    <title>Logout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4e1e4;
+            color: #4a0e0e;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #f8dede;
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            max-width: 350px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #7a2c2c;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #4a0e0e;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #c44d4d;
+            color: #ffffff;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #a63c3c;
+        }
+    </style>
+    <script>
+        function confirmLogout() {
+            const userResponse = confirm("Are you sure you want to log out?");
+            if (userResponse) {
+                alert("You have successfully logged out.");
+                window.location.href = "login.html"; // Change this to your login page
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Log Out</h1>
+        <p>Are you sure you want to log out?</p>
+        <button onclick="confirmLogout()">Sure</button>
+        <button onclick="alert('No, just kidding!')">No, just kidding</button>
+    </div>
+</body>
+</html>
+
