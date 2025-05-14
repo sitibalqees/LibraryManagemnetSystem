@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <style>
+        body {
+            background-color: #f8dede;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .return-container {
+            background: #f5cfcf;
+            max-width: 400px;
+            margin: 3rem auto;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 2.5rem 2rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .return-container h2 {
+            text-align: center;
+            color: #7a2e2e;
+            margin-bottom: 2rem;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #7a2e2e;
+            margin-bottom: 0.2rem;
+        }
+        .info-value {
+            background: #fff;
+            border-radius: 6px;
+            padding: 0.7rem 1rem;
+            margin-bottom: 1.1rem;
+            color: #333;
+            border: 1px solid #e6bcbc;
+        }
+        .return-btn {
+            background: #c94a4a;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 0.9rem 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+        .return-btn:hover {
+            background: #a83a3a;
+        }
+    </style>
+</head>
+<body>
+    <div class="return-container">
+        <h2>Return a Book</h2>
+        <div>
+            <div class="info-label">Username:</div>
+            <div class="info-value">john_doe</div>
+        </div>
+        <div>
+            <div class="info-label">Book Name:</div>
+            <div class="info-value">Harry Potter</div>
+        </div>
+        <div>
+            <div class="info-label">Due Date:</div>
+            <div class="info-value">2024-05-10</div>
+        </div>
+        <div>
+            <div class="info-label">Return Date:</div>
+            <div class="info-value">2024-05-13</div>
+        </div>
+        <button class="return-btn">Return Book</button>
+    </div>
+</body>
+</html> 
