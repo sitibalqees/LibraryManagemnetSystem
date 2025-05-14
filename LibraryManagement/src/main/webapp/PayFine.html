@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Fine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7d3d3;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #8b3b3b;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            height: 60px;
+            justify-content: space-between;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 36px;
+            margin-right: 12px;
+        }
+        .navbar .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 2rem;
+        }
+        .navbar .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .navbar .menu a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+        }
+        .container h2 {
+            color: #7c5a1f;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        .info {
+            margin-bottom: 1.5rem;
+        }
+        .info label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .info .value {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        .fine-amount {
+            font-size: 1.5rem;
+            color: #b22222;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        .pay-btn {
+            background: #c44d4d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .pay-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="library_logo.png" alt="Library Logo" />
+            <span class="title">Whimsigirl Library</span>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Reserve</a>
+            <a href="#">Issue</a>
+            <a href="#">Fine</a>
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Pay Fine</h2>
+        <div class="info">
+            <label>Username:</label>
+            <div class="value">john_doe</div>
+            <label>Book Reserved:</label>
+            <div class="value">The Awkward Human</div>
+            <label>Reason:</label>
+            <div class="value">Late return</div>
+        </div>
+        <div class="fine-amount">Amount Due: $15.00</div>
+        <button class="pay-btn">Pay Now</button>
+    </div>
+</body>
+</html> 
