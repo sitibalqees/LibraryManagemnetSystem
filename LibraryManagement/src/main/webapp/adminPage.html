@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4e1e4;
+        }
+        .admin-navbar {
+            background-color: #3c0d0d;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .admin-navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .admin-navbar ul li {
+            margin-left: 15px;
+        }
+        .admin-navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .admin-container {
+            text-align: center;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 70%;
+        }
+        h1, h2 {
+            color: #4b2e2e;
+        }
+        .admin-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .stat-box {
+            background-color: #8b3f3f;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Admin Navigation Bar -->
+    <div class="admin-navbar">
+        <div class="logo">Library Admin</div>
+        <ul>
+            <li><a href="add.html">Add Book</a></li>
+            <li><a href="updatePage.html">Update Book</a></li>
+            <li><a href="delete.html">Delete Book</a></li>
+            <li><a href="reserve.html">Reserve Book</a></li>
+            <li><a href="payment.html">Fine Payment</a></li>
+        </ul>
+        <a href="logout.html" class="logout-link" style="margin-left: 20px;">Log Out</a>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="admin-container">
+        <h1>WhimsiGirl Library</h1>
+        <h2>Admin Dashboard</h2>
+        <div class="admin-stats">
+            <div class="stat-box">Books Listed: 2</div>
+            <div class="stat-box">Times Book Issued: 6</div>
+            <div class="stat-box">Times Books Returned: 3</div>
+            <div class="stat-box">Registered Users: 6</div>
+            <div class="stat-box">Authors Listed: 2</div>
+            <div class="stat-box">Listed Categories: 6</div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
