@@ -1,139 +1,83 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name = "viewport" content="width=device-width, initial-scale=1.0">
-<title>Library Main Page</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Book</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<nav class="navbar section-content">
-			<a href="#" class="nav-logo">
-			<img src="image/Whimsigirl Logo.jpg" alt="Library Logo" class="logo-image">
-				<h2 class ="logo-text">Whimsigirl Library</h2>
-			</a>
-			<ul class="nav-menu">
-				<li class ="nav-item">
-					<a href="#" class="nav-link">Home</a>
-				</li>
-				<li class ="nav-item">
-					<a href="#" class="nav-link">Search</a>
-				</li>
-				<li class ="nav-item">
-					<a href="#" class="nav-link">Reserve</a>
-				</li>
-				<li class ="nav-item">
-					<a href="#" class="nav-link">Issue</a>
-				</li>
-				<li class ="nav-item">
-					<a href="#" class="nav-link">Fine</a>
-				</li>
-				<li class ="nav-item">
-					<a href="#" class="nav-link">Log Out</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	
-	<div class="main-content">
-        <h2>Welcome to Our Library!</h2>
-        <p>Discover a wide range of books and resources. Use the menu above to navigate through the system.</p>
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <img src="image/Whimsigirl Logo.jpg" alt="Library Logo" class="logo-image">
+                <h2 class="logo-text">Whimsigirl Library</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Add</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Update</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Delete</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Return</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Fine Record</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Categories -->
-        <div class="category">
-            <h2>Best of Non-Fiction</h2>
-            <div class="books">
-                <div class="book">
-                    <img src="image/Malaysian Economy.png" alt="Malaysian Economy">
-                    <h3>The Malaysian Economy</h3>
-                    <p>by Shankaran Nambiar</p>   
-                </div>
-                <div class="book">
-                    <img src="image/Investigating Sherlock.png" alt="Investigating Sherlock">
-                    <h3>Investigating Sherlock</h3>
-                    <p>by Nikki Stafford</p>
-                </div>
-                <div class="book">
-                    <img src="image/A Day with the Prophet.png" alt="A Day with the Prophet">
-                    <h3>A Day with the Prophet</h3>
-                    <p>by Ahmad Von Denffer</p>
-                </div>
-                <div class="book">
-                    <img src="image/The Jimmy Choo Story.png" alt="The Jimmy Choo Story">
-                    <h3>The Jimmy Choo Story</h3>
-                    <p>by Lauren Goldstein Crowe</p>
-                </div>
-                <div class="book">
-                    <img src="image/How Star Wars Conquered the Universe.png" alt="How Star Wars Conquered the Universe">
-                    <h3>How Star Wars Conquered the Universe</h3>
-                    <p>by Chris Taylor</p>
-                </div>
-            </div>
-        </div>
+    <main class="deleteBook-page">
+        <div class="form-container">
+            <h2 class="form-title">Delete Book</h2>
 
-        <div class="category">
-            <h2>Recently Added</h2>
-            <div class="books">
-                <div class="book">
-                    <img src="recent1.jpg" alt="New Book 1">
-                    <h3>New Book 1</h3>
-                    <p>by Author Name</p>
+            <form action="#" method="POST" class="issue-form" id="deleteForm">
+                <div class="form-group">
+                    <label for="BookId">Book Id</label>
+                    <input type="text" id="bookId" name="bookId">
                 </div>
-                <div class="book">
-                    <img src="recent2.jpg" alt="New Book 2">
-                    <h3>New Book 2</h3>
-                    <p>by Author Name</p>
+                <div class="form-group">
+                    <label for="Title">Title</label>
+                    <input type="text" id="title" name="title">
                 </div>
-                <div class="book">
-                    <img src="recent2.jpg" alt="New Book 2">
-                    <h3>New Book 2</h3>
-                    <p>by Author Name</p>
+                <div class="form-group">
+                    <label for="Author">Author</label>
+                    <input type="text" id="author" name="author">
                 </div>
-                <div class="book">
-                    <img src="recent2.jpg" alt="New Book 2">
-                    <h3>New Book 2</h3>
-                    <p>by Author Name</p>
+                <div class="form-group">
+                    <label for="ISBN">ISBN</label>
+                    <input type="text" id="isbn" name="isbn">
                 </div>
-                <div class="book">
-                    <img src="recent2.jpg" alt="New Book 2">
-                    <h3>New Book 2</h3>
-                    <p>by Author Name</p>
+                <div class="form-group">
+                    <label for="Category">Category</label>
+                    <input type="text" id="category" name="category">
                 </div>
-            </div>
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn" id="deleteButton">Delete Book</button>
+                </div>
+            </form>
         </div>
+    </main>
 
-        <div class="category">
-            <h2>Fiction</h2>
-            <div class="books">
-                <div class="book">
-                    <img src="fiction1.jpg" alt="Fiction Book 1">
-                    <h3>Fiction Book 1</h3>
-                    <p>by Author Name</p>
-                </div>
-                <div class="book">
-                    <img src="fiction2.jpg" alt="Fiction Book 2">
-                    <h3>Fiction Book 2</h3>
-                    <p>by Author Name</p>
-                </div>
-                <div class="book">
-                    <img src="recent2.jpg" alt="New Book 2">
-                    <h3>New Book 2</h3>
-                    <p>by Author Name</p>
-                </div>
-                <div class="book">
-                    <img src="recent2.jpg" alt="New Book 2">
-                    <h3>New Book 2</h3>
-                    <p>by Author Name</p>
-                </div>
-                <div class="book">
-                    <img src="recent2.jpg" alt="New Book 2">
-                    <h3>New Book 2</h3>
-                    <p>by Author Name</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+    <script>
+        // Attach an event listener to the delete button
+        document.getElementById('deleteForm').addEventListener('submit', function(event) {
+            // Show a confirmation dialog
+            const userConfirmed = confirm("Are you sure you want to delete this book?");
+            // If the user cancels, prevent the form submission
+            if (!userConfirmed) {
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
