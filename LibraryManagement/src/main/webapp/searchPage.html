@@ -10,7 +10,6 @@
             background-color: #e7d3d3;
             margin: 0;
         }
-        
         /*Top navigation bar styling*/
         .navbar {
             background-color:#3c0d0d;
@@ -24,17 +23,20 @@
         .navbar .logo {
             display: flex;
             align-items: center;
+            
         }
         .navbar .logo img {
             height: 40px;
+            width: 40px;
             margin-right: 12px;
+            border-radius: 50%;
+            object-fit: cover;
         }
         .navbar .title {
             font-size: 24px;
             font-weight: bold;
             margin-left: 10px;
         }
-        
         /*Menu links container*/
         .navbar .menu {
             display: flex;
@@ -51,7 +53,6 @@
             color: #ffd7d7;
             text-decoration: underline;
         }
-        
         /*Main page content container*/
         .main-content {
             max-width: 1100px;
@@ -108,40 +109,50 @@
         }
         .book-card {
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 16px 19.2px;
-            width: 180px;
-            min-height: 160px;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            width: 220px;
+            min-height: 370px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
+        .book-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+        }
+        .book-cover {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 16px 16px 0 0;
+            background: #eee;
+        }
+        .book-info {
+            padding: 16px 16px 12px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex: 1;
+        }
         .book-card .book-title {
             font-weight: bold;
             color: #222;
-            margin-bottom: 8px;
+            font-size: 16px;
+            margin-bottom: 4px;
+            font-family: 'Montserrat', Arial, sans-serif;
         }
-        .book-card .book-author {
-            color: #555;
-            font-size: 15.2px;
+        .book-card.book-author {
+            color: #444;
+            font-size: 14px;
+            font-family: 'Montserrat', Arial, sans-serif;
         }
-        
-		.book-cover {
-		    width: 100%;
-		    height: 140px;
-		    object-fit: cover;
-		    border-radius: 6px 6px 0 0;
-		    margin-bottom: 8px;
-		    background: #eee;
-		}
     </style>
 </head>
 <body>
   <!-- Users Navigation Bar -->
     <div class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="Library Logo"  class="logo"/>
+            <img src="image/logo.jpg" alt="Library Logo"  class="logo"/>
             <span class="title">Whimsigirl Library</span>
         </div>
         <div class="menu">
@@ -165,25 +176,32 @@
             <h3>Recommended Books</h3>
             <div class="book-cards">
                 <div class="book-card">
-                	<img src="hp book.jpeg" alt="Harry Potter and the Philosopher's Stone" class="book-cover">
-                    <div class="book-title">Harry Potter and the Philosopher's Stone</div>
-                    <div class="book-author">by Rowling, J. K.</div>
+                    <img src="image/MiEsposa.jpg" alt="Mi Esposa" class="book-cover">
+                    <div class="book-info">
+                        <div class="book-title">Mi Esposa</div>
+                        <div class="book-author">by Hudanajwa</div>
+                    </div>
                 </div>
                 <div class="book-card">
-                    <div class="book-title">My Dyslexia</div>
-                    <div class="book-author">by Philip Schultz</div>
+                    <img src="image/hp_book.jpg" alt="Harry Potter and the Philosopher's Stone" class="book-cover">
+                    <div class="book-info">
+                        <div class="book-title">Harry Potter and the Philosopher's Stone</div>
+                        <div class="book-author">by Rowling, J. K.</div>
+                    </div>
                 </div>
                 <div class="book-card">
-                    <div class="book-title">Cast-Iron Cooking</div>
-                    <div class="book-author">by Rachael Narins</div>
+                    <img src="image/bookshop.jpg" alt="Welcome to the Hyunam-Dong Bookshop" class="book-cover">
+                    <div class="book-info">
+                        <div class="book-title">Welcome to the Hyunam-Dong Bookshop</div>
+                        <div class="book-author">by Hwang Bo-Reum</div>
+                    </div>
                 </div>
                 <div class="book-card">
-                    <div class="book-title">The Awkward Human</div>
-                    <div class="book-author">by Adam Dachis</div>
-                </div>
-                <div class="book-card">
-                    <div class="book-title">From Naked Ape to Superspecies</div>
-                    <div class="book-author">by David Suzuki</div>
+                    <img src="image/mahu.jpg" alt="Mahu Ke Syurga" class="book-cover">
+                    <div class="book-info">
+                        <div class="book-title">Mahu Ke Syurga</div>
+                        <div class="book-author">by Karisma Kejora</div>
+                    </div>
                 </div>
             </div>
         </div>
