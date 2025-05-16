@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fine Records</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4e1e4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #3c0d0d;
+      padding: 15px 30px;
+      color: #fff;
+      flex-wrap: wrap;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+	 .navbar ul {
+	  display: flex;
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	  gap: 20px; 
+	}
+
+	.navbar ul li a {
+	  color: white;
+	  text-decoration: none;
+	  font-weight: bold;
+	  padding: 8px 12px;
+	  border-radius: 5px;
+	  transition: background 0.3s;
+	}
+	
+	.navbar ul li a:hover {
+	  background-color: #a94d4d;
+	  color: #ffd1d1;
+	}
+
+    .main-content {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #a23c3c;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f9dada;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+      }
+
+      td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td::before {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        font-weight: bold;
+        content: attr(data-label);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="header">
+    <div class="title">Library Admin</div>
+    <div class="navbar">
+      <ul>
+        <li><a href="add.html">Add</a></li>
+        <li><a href="updatePage.html">Update</a></li>
+        <li><a href="delete.html">Delete</a></li>
+        <li><a href="reserve.html">Return</a></li>
+        <li><a href="payment.html">Fine Record</a></li>
+        <li><a href="logout.html">Log Out</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>Paid Fine Records</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>Book Title</th>
+          <th>Borrow Date</th>
+          <th>Due Date</th>
+          <th>Return Date</th>
+          <th>Fine Amount (RM)</th>
+          <th>Payment Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="User Name">Ali Bin Ahmad</td>
+          <td data-label="Book Title">Intro to Programming</td>
+          <td data-label="Borrow Date">2025-04-01</td>
+          <td data-label="Due Date">2025-04-08</td>
+          <td data-label="Return Date">2025-04-10</td>
+          <td data-label="Fine Amount">2.00</td>
+          <td data-label="Payment Date">2025-04-11</td>
+        </tr>
+        <tr>
+          <td data-label="User Name">Siti Nurhaliza</td>
+          <td data-label="Book Title">Data Structures</td>
+          <td data-label="Borrow Date">2025-03-15</td>
+          <td data-label="Due Date">2025-03-22</td>
+          <td data-label="Return Date">2025-03-25</td>
+          <td data-label="Fine Amount">3.00</td>
+          <td data-label="Payment Date">2025-03-26</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
